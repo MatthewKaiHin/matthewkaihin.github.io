@@ -1,0 +1,102 @@
+table {
+    width: 100%;
+}
+
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.programming th {
+    background-color: #0d96e0;
+    color: white;
+}
+
+.language th {
+    background-color: #930de0;
+    color: white;
+}
+
+.bar {
+    position: relative;
+    border-radius: 20px;
+
+}
+.bar div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+}
+
+.programming .bar {
+    border: 2px solid #0d96e0;
+}
+
+.language .bar {
+    border: 2px solid #930de0;
+}
+
+.programming .bar div {
+    background-color: #0d96e0;
+}
+
+.language .bar div {
+    background-color: #930de0;
+}    
+
+.programming .score {
+    animation: fadeOut 3s;
+    color: #0d96e0;
+}
+
+.language .score {
+    animation: fadeOut 3s;
+    color: #930de0;
+}
+
+#seven-bar {
+    animation: seven-fill 2s forwards;
+}
+
+#eight-bar {
+    animation: eight-fill 2s forwards;
+}
+
+#nine-bar {
+    animation: nine-fill 2s forwards;
+}
+
+#ten-bar {
+    animation: nine-fill 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes seven-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes eight-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes nine-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes ten-fill {
+    100% {
+        width: 100%;
+    }
+}
