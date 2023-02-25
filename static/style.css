@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    transition: ease all 0.5s;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* header section start */
+.header_section {
+    width: 100%;
+    float: left;
+    background-image: url(image/header.png);
+    height: auto;
+    background-size: 100%;
+    padding: 0px 0px 20px 0px;
+    animation: fadeOut 1s;
+}
+
+.header_section h1{
+    font-size: 72px;
+}
+
+.bg-light {
+    background-color: transparent;
+}
+
+.menu_main {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menu_main ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: inline-flex;
+}
+
+.menu_main li {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    border-radius: 40px;
+}
+
+.menu_main li a {
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.menu_main li a:hover {
+    color: #ffffff;
+    background-color: #bdbdbd3b;
+}
+/* header section end */
+
+/* about section start */
+.about_section {
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    display: block;
+    animation: fadeOut 1s;
+}
+
+.about_me_main {
+    width: 100%;
+}
+
+.about_me_title {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #1e2e33;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.circular_icon {
+    border-radius: 50%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #1e2e33;
+    border-style: solid;
+}
+
+.circular_icon img{
+    width: auto; 
+    height: 100%;
+    margin-left: -40px;
+}
+
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #1E2E33;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.about_img {
+    width: 400px;
+    height: auto;
+}
+
+.about_img:hover {
+    border-radius: 50%;
+    animation: rotation 1s infinite linear;
+
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.about_section .modal {
+    position: fixed; 
+    top:50%; 
+    display: none;
+}
+/* about section end */
+
+/* resume section start */
+.resume_section {
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: none;
+    animation: fadeOut 1s;
+}
+
+.resume_title{
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    color: #1e2e33;
+    font-weight: bold;
+}
+
+.resume_main {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+
+.resume_main .col-lg-6 {
+    height: 550px;
+}
+
+.experience_main {
+    background-color: #bdbdbd3b;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #00000020;
+}
+
+.education_main {
+    background-color: #bdbdbd3b;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #00000020;
+}
+
+.carousel_card {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    justify-content: center;
+    height: 500px;
+}
+
+.carousel_card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.card_description {
+    text-align: start;
+    list-style-type: square;
+}
+
+/* resume section end */
+
+/* contact sections start */
+.contact_section {
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: none;
+    animation: fadeOut 1s;
+}
+
+.contact_title {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    color: #1e2e33;
+    font-weight: bold;
+}
+
+.contact_form {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #1e2e33;
+    margin: 0px;
+    padding-top: 40px;
+}
+
+.contact_send {
+    width: 100%;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    color: #1e2e33;
+    border-radius: 30px;
+    border-color: #1e2e33;
+    background-color: #ffffff;
+    padding: 7px;
+}
+
+.contact_send:hover {
+    color: #ffffff;
+    background-color: #1e2e33;
+}
+
+.contact_info {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact_icon {
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.contact_icon img {
+    width: 100px;
+    height: auto;
+}
+
+.contact_icon p {
+    vertical-align: middle;
+}
+/* contact sections end */
